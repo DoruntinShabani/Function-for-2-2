@@ -13,7 +13,7 @@ def solution(i, length):
     L = np.sum(Li_values)
     if L >= 5:
         print('Total length of the tubes is', L,'meters. You can fit only', i - 1,
-              'tubes, because Doruntins room is only 5 meters wide. Try a different voltage or frequence.')
+              'tubes, because Doruntins room is only 5 meters wide. Try a different voltage and/or frequence.')
         exit()
     if L<5 and length == i+1:
         print ('Total length of the tubes is',L,'meters. Congrats you can fit this accelerator in Doruntins room.')
