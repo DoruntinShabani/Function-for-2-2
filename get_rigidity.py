@@ -7,7 +7,7 @@ class Rigidity:
 
     def __init__(self, m0u, Ekin, type, Q):
         m0u = m0u
-        self.m0kg = self.m0u * 1.66054E-27                              #changes unit of mass from dalton to kg
+        self.m0kg = m0u * 1.66054E-27                              #changes unit of mass from dalton to kg
         EkinJ = self.getEkinV(Ekin, type) * 1.6E-13                #changes unit of kinetic energy from AMev,MeV/u,TeV,GeV Joules
         Erest = self.m0kg * (self.c ** 2)                         
         Etotal = EkinJ + Erest                            
